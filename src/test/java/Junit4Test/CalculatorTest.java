@@ -1,10 +1,13 @@
 package Junit4Test;
 
 import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
 
 public class CalculatorTest {
 
-    @org.junit.Test
+
+    @Test
     public void addNumber() {
 
         int actual = Calculator.addNumber(10,10);
@@ -13,16 +16,16 @@ public class CalculatorTest {
         Assert.assertEquals(actual,excepted);
     }
 
-    @org.junit.Test
+    @Test
     public void mulNumber() {
 
         int actual= Calculator.mulNumber(10,10);
         int excepted=100;
 
-        Assert.assertEquals(10,10);
+        Assert.assertEquals(actual,excepted);
     }
 
-    @org.junit.Test
+    @Test
     public void subNumber() {
 
         int actual=Calculator.subNumber(10,10);
@@ -31,7 +34,7 @@ public class CalculatorTest {
         Assert.assertEquals(actual,excepted);
     }
 
-    @org.junit.Test
+    @Test
     public void divNumber() {
 
         int actual = Calculator.divNumber(100,10);
